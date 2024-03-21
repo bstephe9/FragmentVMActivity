@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 class DiceViewModel : ViewModel() {
     private val selected = MutableLiveData<Int>()
 
-    fun setSelectedImage(imageId: Int) {
-        selected.value = imageId
+    fun setSelectedImage(number: Int) {
+        selected.value = number
     }
 
     fun getSelectedImage() : LiveData<Int> {
